@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public GameObject endEffect;
-    const float lifeTime = 3.0f;
+    const float lifeTime = 1.0f;
     float currentLifeTime;
 
     // Use this for initialization
@@ -21,6 +21,6 @@ public class Bullet : MonoBehaviour
     void UpdateLifeTime()
     {
         currentLifeTime += Time.deltaTime;
-        if (currentLifeTime > lifeTime) Destroy(this);
+        if (currentLifeTime > lifeTime) Destroy(gameObject);
     }
 }

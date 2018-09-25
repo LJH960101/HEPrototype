@@ -18,6 +18,6 @@ public class MyBullet : Bullet {
             }
         }
         Instantiate(endEffect).transform.position = transform.position;
-        Destroy(this);
+        Destroy(gameObject);
     }
 }

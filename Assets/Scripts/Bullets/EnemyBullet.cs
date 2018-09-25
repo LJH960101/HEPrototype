@@ -19,6 +19,6 @@ public class EnemyBullet : Bullet
                 new Vector3(0f, attackKnockbackPower, 0f));
         }
         Instantiate(endEffect).transform.position = transform.position;
-        Destroy(this);
+        Destroy(gameObject);
     }
 }
